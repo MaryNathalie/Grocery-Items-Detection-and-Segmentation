@@ -103,7 +103,7 @@ Deploy the Gradio interface with app.py, follow these steps:
 1. Clone this repository
 
 ```python
-git clone 
+git clone https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation.git
 ```
 
 2. Install dependencies:
