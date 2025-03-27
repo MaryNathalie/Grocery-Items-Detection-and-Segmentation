@@ -1,6 +1,12 @@
 # Grocery Items Detection and Segmentation
 
+<p align="center">
+<img src="https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation/blob/main/images/sample.png" width=60% height=60%>
+</p> 
+
 This repository contains the implementation of a YOLO-based object detection and segmentation model for grocery items. The project focuses on improving model accuracy and real-time inference speed, with deployment via a web-based application using Gradio and WebRTC.
+
+🔗 [1st Iteration Presentation](https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation/blob/main/documents/presentation_01.pdf) | [2nd Iteration Presentation](https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation/blob/main/documents/presentation_02.pdf)
 
 ### 📌 Features
 - COCO-formatted **Dataset Preparation** into YOLO format, ensuring bounding boxes and segmentations remain within image boundaries.
@@ -46,6 +52,8 @@ The dataset consists of images of grocery items. Data augmentation techniques su
 
 </div> 
 
+For more information about the dataset, email me at marynathaliedelacruz@gmail.com
+
 ### 🏗 Model Training
 
 The project initially used the YOLO11-Nano model but later upgraded to YOLO11-Medium for better accuracy. The training pipeline is configured as follows:
@@ -59,7 +67,6 @@ model.train(
   batch=16,
   patience=10,
   name="run02",
-  
   degrees=30,
   hsv_v=0.3,
   translate=0.4,
@@ -113,14 +120,37 @@ python app.py
 
 4. Access the web interface. If deploying on a remote server, use share=True in gr.Interface.launch() to get a public link.
 
-### 📈 Results
+### 📊 Results
 
-- Comparing models with and without additional data augmentation:
-- Improved segmentation and classification accuracy.
-- Reduced box loss, class loss, segmentation loss, and DF1 loss.
+Comparing models YOLO-M with data augmentation (blue) and YOLO11-L without additional data augmentation (pink). Figures are from wandb:
+
+- Reduced validation box loss, class loss, segmentation loss, and DF1 loss.
+
+<p align="center">
+<img src="https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation/blob/main/images/validation.png" width=50% height=50%>
+</p> 
+
 - Increased computational efficiency with optimized hyperparameters.
 
-### 🛠 Next Steps
+<p align="center">
+<img src="https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation/blob/main/images/parameters.png" width=50% height=50%>
+</p> 
+
+- Improved classification accuracy.
+
+| Model Type                                          | Precision | Recall | mAP50 | mAP95 |
+|-----------------------------------------------------|-----------|--------|-------|-------|
+| YOLO-M with data augmentation                       | **96.9**      | 92.7   | **95.6**  | **88.9**  |
+| YOLO11-L without additional data augmentation       | 96.0      | **92.9**   | 95.5  | 88.7  |
+
+- Improved classification accuracy.
+
+| Model Type                                          | Precision | Recall | mAP50 | mAP95 |
+|-----------------------------------------------------|-----------|--------|-------|-------|
+| YOLO-M with data augmentation                       | **96.6**      | **92.2**   | **94.8**  | **84.9**  |
+| YOLO11-L without additional data augmentation       | 96.9      | 92.1   | 94.7  | 84.8  |
+
+### 📜 Future Work
 
 - Deploy ONNX inference with onnxruntime.InferenceSession().
 - Perform hyperparameter tuning with Ray Tune.
