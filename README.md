@@ -138,17 +138,25 @@ Comparing models YOLO-M with data augmentation (blue) and YOLO11-L without addit
 
 - Improved classification accuracy.
 
+<div align="center">
+  
 | Model Type                                          | Precision | Recall | mAP50 | mAP95 |
 |-----------------------------------------------------|-----------|--------|-------|-------|
 | YOLO-M with data augmentation                       | **96.9**      | 92.7   | **95.6**  | **88.9**  |
 | YOLO11-L without additional data augmentation       | 96.0      | **92.9**   | 95.5  | 88.7  |
 
+</div> 
+
 - Improved classification accuracy.
 
+<div align="center">
+  
 | Model Type                                          | Precision | Recall | mAP50 | mAP95 |
 |-----------------------------------------------------|-----------|--------|-------|-------|
 | YOLO-M with data augmentation                       | **96.6**      | **92.2**   | **94.8**  | **84.9**  |
 | YOLO11-L without additional data augmentation       | 96.9      | 92.1   | 94.7  | 84.8  |
+
+</div> 
 
 ### 📜 Future Work
 
