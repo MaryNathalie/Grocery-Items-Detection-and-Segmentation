@@ -1,0 +1,9 @@
+{"time":"2024-12-06T16:45:25.178562449+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-06T16:45:25.178579072+08:00","level":"INFO","msg":"created symlink","path":"/raid/students/mary/mlops-exercises/ME6/model_dev/wandb/run-20241206_164525-lt2rq3ww/logs/debug-core.log"}
+{"time":"2024-12-06T16:45:25.388767874+08:00","level":"INFO","msg":"created new stream","id":"lt2rq3ww"}
+{"time":"2024-12-06T16:45:25.388829336+08:00","level":"INFO","msg":"stream: started","id":"lt2rq3ww"}
+{"time":"2024-12-06T16:45:25.388846517+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"lt2rq3ww"}
+{"time":"2024-12-06T16:45:25.38886279+08:00","level":"INFO","msg":"sender: started","stream_id":"lt2rq3ww"}
+{"time":"2024-12-06T16:45:25.388897153+08:00","level":"INFO","msg":"handler: started","stream_id":"lt2rq3ww"}
+{"time":"2024-12-06T16:45:25.707246945+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-12-06T16:45:25.707335925+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 404 Not Found: {\"errors\":[{\"message\":\"entity your-entity not found during upsertBucket\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}

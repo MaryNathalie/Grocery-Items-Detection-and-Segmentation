@@ -1,0 +1,30 @@
+train: /data/students/mary/mlops-exercises/ME6/dataset__all/train/images
+val: /data/students/mary/mlops-exercises/ME6/dataset__all/val/images
+
+nc: 24
+
+names:
+ - Coke Zero Bottled
+ - Eden Cheese
+ - KitKat
+ - Nescafe 3-in-1 Twin Pack
+ - Alaska Classic 377g Can
+ - Simply Pure Canola Oil
+ - Purefoods Corned Beef
+ - Whole Bulb of Garlic
+ - Lucky Me Pansit Canton
+ - UFC Banana Ketchup
+ - Whole Lemon
+ - Nestle All Purpose Cream 250ml
+ - Lady's Choice Real Mayonnaise 220 ml jar
+ - Skippy Peanut Butter
+ - Royal Pasta
+ - Del Monte Pineapple Juice
+ - Rebisco Crackers
+ - 555 Sardines
+ - Sunsilk Shampoo
+ - Dove Lavender Soap
+ - Silver Swan Soy Sauce 385 mL
+ - Colgate (Advanced White) Value Pack (2 Tubes)
+ - Century Tuna
+ - GreenCross Alcohol

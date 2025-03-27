@@ -1,0 +1,649 @@
+💡 Learn about RayTune at https://docs.ultralytics.com/integrations/ray-tune
+2024-12-06 17:16:46,442	INFO worker.py:1821 -- Started a local Ray instance.
+WARNING ⚠️ search space not provided, using default search space.
+2024-12-06 17:16:49,119	INFO tune.py:616 -- [output] This uses the legacy output and progress reporter, as Jupyter notebooks are not supported by the new engine, yet. For more information, please see https://github.com/ray-project/ray/issues/36949
+2024-12-06 17:16:49,508	WARNING tune_controller.py:2132 -- The maximum number of pending trials has been automatically set to the number of available cluster CPUs, which is high (281 CPUs/pending trials). If you're running an experiment with a large number of trials, this could lead to scheduling overhead. In this case, consider setting the `TUNE_MAX_PENDING_TRIALS_PG` environment variable to the desired maximum number of concurrent pending trials.
+2024-12-06 17:16:49,511	WARNING tune_controller.py:2132 -- The maximum number of pending trials has been automatically set to the number of available cluster CPUs, which is high (281 CPUs/pending trials). If you're running an experiment with a large number of trials, this could lead to scheduling overhead. In this case, consider setting the `TUNE_MAX_PENDING_TRIALS_PG` environment variable to the desired maximum number of concurrent pending trials.
+2024-12-06 17:16:49,513	INFO wandb.py:319 -- Already logged into W&B.
+[33m(raylet)[0m bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by bash)
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: Currently logged in as: mgdelacruz12 (mgdelacruz12-university-of-the-philippines-diliman). Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: Tracking run with wandb version 0.19.0
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: Run data is saved locally in /tmp/ray/session_2024-12-06_17-16-44_907046_1743218/artifacts/2024-12-06_17-16-49/_tune_2024-12-06_17-16-49/driver_artifacts/_tune_d2a3a_00004_4_bgr=0.4375,box=0.1800,cls=1.3151,copy_paste=0.4526,degrees=3.8845,fliplr=0.4439,flipud=0.6289,hsv_h=0.0248,hsv_2024-12-06_17-16-49/wandb/run-20241206_171652-d2a3a_00004
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: Syncing run _tune_d2a3a_00004
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: ⭐️ View project at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1744776)[0m wandb: 🚀 View run at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d2a3a_00004
+2024-12-06 17:16:54,177	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00003
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:16:54,997	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00001
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:16:56,121	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00009
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1744784)[0m wandb:
+[33m(raylet)[0m bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by bash)[32m [repeated 9x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+2024-12-06 17:16:56,911	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00007
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1744784)[0m wandb: 🚀 View run _tune_d2a3a_00003 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d2a3a_00003
+[36m(_WandbLoggingActor pid=1744784)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1744784)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=1744784)[0m wandb: Find logs at: ./wandb/run-20241206_171652-d2a3a_00003/logs
+2024-12-06 17:16:57,684	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00000
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: Currently logged in as: mgdelacruz12 (mgdelacruz12-university-of-the-philippines-diliman). Use `wandb login --relogin` to force relogin[32m [repeated 9x across cluster][0m
+2024-12-06 17:16:58,453	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00008
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: Tracking run with wandb version 0.19.0[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: Run data is saved locally in /tmp/ray/session_2024-12-06_17-16-44_907046_1743218/artifacts/2024-12-06_17-16-49/_tune_2024-12-06_17-16-49/driver_artifacts/_tune_d2a3a_00001_1_bgr=0.2515,box=0.0431,cls=1.9004,copy_paste=0.0173,degrees=27.9871,fliplr=0.7518,flipud=0.6541,hsv_h=0.0072,hs_2024-12-06_17-16-49/wandb/run-20241206_171653-d2a3a_00001[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: Run `wandb offline` to turn off syncing.[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: Syncing run _tune_d2a3a_00001[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: ⭐️ View project at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1744704)[0m wandb: 🚀 View run at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d2a3a_00001[32m [repeated 9x across cluster][0m
+2024-12-06 17:16:59,188	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00005
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:17:00,052	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00004
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:17:00,913	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00002
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:17:01,828	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d2a3a_00006
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1744737)[0m wandb:                                                                                [32m [repeated 6x across cluster][0m
+2024-12-06 17:17:02,575	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/raid/students/mary/mlops-exercises/ME6/model_dev/runs/detect/tune3/_tune_2024-12-06_17-16-49' in 0.0095s.
+[36m(_WandbLoggingActor pid=1744737)[0m wandb: 🚀 View run _tune_d2a3a_00005 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d2a3a_00005[32m [repeated 6x across cluster][0m
+[36m(_WandbLoggingActor pid=1744737)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 6x across cluster][0m
+[36m(_WandbLoggingActor pid=1744737)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)[32m [repeated 6x across cluster][0m
+[36m(_WandbLoggingActor pid=1744737)[0m wandb: Find logs at: ./wandb/run-20241206_171652-d2a3a_00005/logs[32m [repeated 6x across cluster][0m
+2024-12-06 17:17:05,076	ERROR tune.py:1037 -- Trials did not complete: [_tune_d2a3a_00000, _tune_d2a3a_00001, _tune_d2a3a_00002, _tune_d2a3a_00003, _tune_d2a3a_00004, _tune_d2a3a_00005, _tune_d2a3a_00006, _tune_d2a3a_00007, _tune_d2a3a_00008, _tune_d2a3a_00009]
+2024-12-06 17:17:05,076	INFO tune.py:1041 -- Total run time: 15.96 seconds (13.05 seconds for the tuning loop).
+[36m(_WandbLoggingActor pid=1744781)[0m wandb:                                                                                [32m [repeated 3x across cluster][0m
+[36m(_WandbLoggingActor pid=1744683)[0m wandb: 🚀 View run _tune_d2a3a_00002 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d2a3a_00002[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1744683)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1744683)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1744683)[0m wandb: Find logs at: ./wandb/run-20241206_171652-d2a3a_00002/logs[32m [repeated 2x across cluster][0m
+💡 Learn about RayTune at https://docs.ultralytics.com/integrations/ray-tune
+2024-12-06 17:18:45,369	INFO worker.py:1821 -- Started a local Ray instance.
+WARNING ⚠️ search space not provided, using default search space.
+2024-12-06 17:18:47,843	INFO tune.py:616 -- [output] This uses the legacy output and progress reporter, as Jupyter notebooks are not supported by the new engine, yet. For more information, please see https://github.com/ray-project/ray/issues/36949
+2024-12-06 17:18:47,851	WARNING tune_controller.py:2132 -- The maximum number of pending trials has been automatically set to the number of available cluster CPUs, which is high (281 CPUs/pending trials). If you're running an experiment with a large number of trials, this could lead to scheduling overhead. In this case, consider setting the `TUNE_MAX_PENDING_TRIALS_PG` environment variable to the desired maximum number of concurrent pending trials.
+2024-12-06 17:18:47,853	WARNING tune_controller.py:2132 -- The maximum number of pending trials has been automatically set to the number of available cluster CPUs, which is high (281 CPUs/pending trials). If you're running an experiment with a large number of trials, this could lead to scheduling overhead. In this case, consider setting the `TUNE_MAX_PENDING_TRIALS_PG` environment variable to the desired maximum number of concurrent pending trials.
+2024-12-06 17:18:47,855	INFO wandb.py:319 -- Already logged into W&B.
+[33m(raylet)[0m bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by bash)
+[36m(_WandbLoggingActor pid=1773534)[0m wandb: Currently logged in as: mgdelacruz12 (mgdelacruz12-university-of-the-philippines-diliman). Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: Tracking run with wandb version 0.19.0
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: Run data is saved locally in /tmp/ray/session_2024-12-06_17-18-44_023537_1743218/artifacts/2024-12-06_17-18-47/_tune_2024-12-06_17-18-47/driver_artifacts/_tune_19670_00000_0_bgr=0.6504,box=0.1436,cls=1.9823,copy_paste=0.0223,degrees=9.1005,fliplr=0.4219,flipud=0.8487,hsv_h=0.0935,hsv_2024-12-06_17-18-47/wandb/run-20241206_171851-19670_00000
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: Syncing run _tune_19670_00000
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: ⭐️ View project at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: 🚀 View run at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/19670_00000
+2024-12-06 17:18:52,413	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00004
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:18:53,188	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00003
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:18:53,897	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00006
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:18:54,753	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00008
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1773615)[0m wandb:
+[33m(raylet)[0m bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by bash)[32m [repeated 9x across cluster][0m
+2024-12-06 17:18:55,782	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00009
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1773615)[0m wandb: 🚀 View run _tune_19670_00004 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/19670_00004
+[36m(_WandbLoggingActor pid=1773615)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1773615)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=1773615)[0m wandb: Find logs at: ./wandb/run-20241206_171851-19670_00004/logs
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: Currently logged in as: mgdelacruz12 (mgdelacruz12-university-of-the-philippines-diliman). Use `wandb login --relogin` to force relogin[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: Tracking run with wandb version 0.19.0[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: Run data is saved locally in /tmp/ray/session_2024-12-06_17-18-44_023537_1743218/artifacts/2024-12-06_17-18-47/_tune_2024-12-06_17-18-47/driver_artifacts/_tune_19670_00003_3_bgr=0.8005,box=0.1423,cls=0.4440,copy_paste=0.9612,degrees=29.5634,fliplr=0.4267,flipud=0.4120,hsv_h=0.0724,hs_2024-12-06_17-18-47/wandb/run-20241206_171851-19670_00003[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: Run `wandb offline` to turn off syncing.[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: Syncing run _tune_19670_00003[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: ⭐️ View project at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 9x across cluster][0m
+[36m(_WandbLoggingActor pid=1773525)[0m wandb: 🚀 View run at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/19670_00003[32m [repeated 9x across cluster][0m
+2024-12-06 17:18:56,834	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00001
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:18:57,559	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00005
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:18:58,355	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00002
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:18:59,149	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00000
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 17:19:00,183	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_19670_00007
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+[36m(_WandbLoggingActor pid=1773507)[0m wandb:                                                                                [32m [repeated 6x across cluster][0m
+2024-12-06 17:19:01,025	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/raid/students/mary/mlops-exercises/ME6/model_dev/runs/detect/tune4/_tune_2024-12-06_17-18-47' in 0.0082s.
+[36m(_WandbLoggingActor pid=1773507)[0m wandb: 🚀 View run _tune_19670_00005 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/19670_00005[32m [repeated 6x across cluster][0m
+[36m(_WandbLoggingActor pid=1773507)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 6x across cluster][0m
+[36m(_WandbLoggingActor pid=1773507)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)[32m [repeated 6x across cluster][0m
+[36m(_WandbLoggingActor pid=1773507)[0m wandb: Find logs at: ./wandb/run-20241206_171851-19670_00005/logs[32m [repeated 6x across cluster][0m
+2024-12-06 17:19:03,881	ERROR tune.py:1037 -- Trials did not complete: [_tune_19670_00000, _tune_19670_00001, _tune_19670_00002, _tune_19670_00003, _tune_19670_00004, _tune_19670_00005, _tune_19670_00006, _tune_19670_00007, _tune_19670_00008, _tune_19670_00009]
+2024-12-06 17:19:03,882	INFO tune.py:1041 -- Total run time: 16.04 seconds (13.16 seconds for the tuning loop).
+[36m(_WandbLoggingActor pid=1773552)[0m wandb:                                                                                [32m [repeated 3x across cluster][0m
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: 🚀 View run _tune_19670_00000 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/19670_00000[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1773512)[0m wandb: Find logs at: ./wandb/run-20241206_171851-19670_00000/logs[32m [repeated 2x across cluster][0m
+2024-12-06 17:19:04,003	WARNING tune.py:219 -- Stop signal received (e.g. via SIGINT/Ctrl+C), ending Ray Tune run. This will try to checkpoint the experiment state one last time. Press CTRL+C (or send SIGINT/SIGKILL/SIGTERM) to skip.
+/bin/bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Fri Dec  6 17:19:09 2024
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.154.05             Driver Version: 535.154.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:07:00.0 Off |                    0 |
+| N/A   45C    P0             255W / 400W |  37021MiB / 40960MiB |    100%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100-SXM4-40GB          On  | 00000000:0F:00.0 Off |                    0 |
+| N/A   22C    P0              59W / 400W |  10350MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A100-SXM4-40GB          On  | 00000000:47:00.0 Off |                    0 |
+| N/A   38C    P0             293W / 400W |  13868MiB / 40960MiB |     77%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA A100-SXM4-40GB          On  | 00000000:4E:00.0 Off |                    0 |
+| N/A   22C    P0              59W / 400W |   1048MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA A100-SXM4-40GB          On  | 00000000:87:00.0 Off |                    0 |
+| N/A   59C    P0             100W / 400W |  28684MiB / 40960MiB |     40%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA A100-SXM4-40GB          On  | 00000000:90:00.0 Off |                    0 |
+| N/A   42C    P0             265W / 400W |  37126MiB / 40960MiB |     86%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA A100-SXM4-40GB          On  | 00000000:B7:00.0 Off |                    0 |
+| N/A   32C    P0              62W / 400W |   9714MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA A100-SXM4-40GB          On  | 00000000:BD:00.0 Off |                    0 |
+| N/A   25C    P0              59W / 400W |   8528MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     89563      C   ...eph/anaconda3/envs/myenv/bin/python      638MiB |
+|    0   N/A  N/A    276105      C   python                                    12812MiB |
+|    0   N/A  N/A    633372      C   ...hel/anaconda3/envs/AI321/bin/python      514MiB |
+|    0   N/A  N/A    815739      C   ...hel/anaconda3/envs/AI321/bin/python      514MiB |
+|    0   N/A  N/A    997150      C   python                                    18612MiB |
+|    0   N/A  N/A   1475503      C   ...hel/anaconda3/envs/AI321/bin/python      496MiB |
+|    0   N/A  N/A   1625335      C   ...hel/anaconda3/envs/AI321/bin/python      530MiB |
+|    0   N/A  N/A   1630055      C   python                                      818MiB |
+|    0   N/A  N/A   1725929      C   python                                      658MiB |
+|    0   N/A  N/A   3782067      C   ...eph/anaconda3/envs/myenv/bin/python      620MiB |
+|    1   N/A  N/A   1802788      C   ...naconda3/envs/mex4_orion/bin/python     5330MiB |
+|    2   N/A  N/A   1567300      C   ...line/anaconda3/envs/BFCL/bin/python     8902MiB |
+|    3   N/A  N/A   1725929      C   python                                      454MiB |
+|    4   N/A  N/A    604612      C   ...naconda3/envs/ai231-venv/bin/python     6260MiB |
+|    4   N/A  N/A   1054301      C   ...naconda3/envs/ai231-venv/bin/python    22368MiB |
+|    5   N/A  N/A   1489065      C   ...conda3/envs/bertram_mex5/bin/python    29438MiB |
+|    5   N/A  N/A   1570034      C   ...anaconda3/envs/class_env/bin/python     7610MiB |
+|    6   N/A  N/A   1533795      C   ...anaconda3/envs/class_env/bin/python     9416MiB |
+|    7   N/A  N/A     89563      C   ...eph/anaconda3/envs/myenv/bin/python     3036MiB |
+|    7   N/A  N/A   3782067      C   ...eph/anaconda3/envs/myenv/bin/python     3130MiB |
++---------------------------------------------------------------------------------------+
+Using device: cuda
+Number of GPUs: 1
+GPU name: NVIDIA A100-SXM4-40GB
+PyTorch version: 2.5.1+cu121
+/bin/bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Fri Dec  6 18:34:50 2024
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.154.05             Driver Version: 535.154.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:07:00.0 Off |                    0 |
+| N/A   52C    P0             296W / 400W |  35383MiB / 40960MiB |    100%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100-SXM4-40GB          On  | 00000000:0F:00.0 Off |                    0 |
+| N/A   24C    P0              60W / 400W |  10350MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A100-SXM4-40GB          On  | 00000000:47:00.0 Off |                    0 |
+| N/A   31C    P0              94W / 400W |  18494MiB / 40960MiB |     47%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA A100-SXM4-40GB          On  | 00000000:4E:00.0 Off |                    0 |
+| N/A   23C    P0              59W / 400W |   2350MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA A100-SXM4-40GB          On  | 00000000:87:00.0 Off |                    0 |
+| N/A   45C    P0              67W / 400W |  28684MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA A100-SXM4-40GB          On  | 00000000:90:00.0 Off |                    0 |
+| N/A   46C    P0             109W / 400W |  10922MiB / 40960MiB |     59%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA A100-SXM4-40GB          On  | 00000000:B7:00.0 Off |                    0 |
+| N/A   29C    P0              61W / 400W |   9714MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA A100-SXM4-40GB          On  | 00000000:BD:00.0 Off |                    0 |
+| N/A   26C    P0              59W / 400W |   8528MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     89563      C   ...eph/anaconda3/envs/myenv/bin/python      638MiB |
+|    0   N/A  N/A    276105      C   python                                    12574MiB |
+|    0   N/A  N/A    633372      C   ...hel/anaconda3/envs/AI321/bin/python      514MiB |
+|    0   N/A  N/A    815739      C   ...hel/anaconda3/envs/AI321/bin/python      514MiB |
+|    0   N/A  N/A    997150      C   python                                    18700MiB |
+|    0   N/A  N/A   1475503      C   ...hel/anaconda3/envs/AI321/bin/python      496MiB |
+|    0   N/A  N/A   1625335      C   ...hel/anaconda3/envs/AI321/bin/python      530MiB |
+|    0   N/A  N/A   3782067      C   ...eph/anaconda3/envs/myenv/bin/python      620MiB |
+|    1   N/A  N/A   1802788      C   ...naconda3/envs/mex4_orion/bin/python     5330MiB |
+|    2   N/A  N/A   1891964      C   ...line/anaconda3/envs/BFCL/bin/python    13530MiB |
+|    3   N/A  N/A   1827966      C   ...r/anaconda3/envs/foryolo/bin/python      618MiB |
+|    3   N/A  N/A   1876422      C   ...aconda3/envs/backend_env/bin/python      682MiB |
+|    3   N/A  N/A   1911245      C   python                                      444MiB |
+|    4   N/A  N/A    604612      C   ...naconda3/envs/ai231-venv/bin/python     6260MiB |
+|    4   N/A  N/A   1054301      C   ...naconda3/envs/ai231-venv/bin/python    22368MiB |
+|    5   N/A  N/A   1570034      C   ...anaconda3/envs/class_env/bin/python    10898MiB |
+|    6   N/A  N/A   1533795      C   ...anaconda3/envs/class_env/bin/python     9416MiB |
+|    7   N/A  N/A     89563      C   ...eph/anaconda3/envs/myenv/bin/python     3036MiB |
+|    7   N/A  N/A   3782067      C   ...eph/anaconda3/envs/myenv/bin/python     3130MiB |
++---------------------------------------------------------------------------------------+
+💡 Learn about RayTune at https://docs.ultralytics.com/integrations/ray-tune
+2024-12-06 18:35:42,750	INFO worker.py:1821 -- Started a local Ray instance.
+WARNING ⚠️ search space not provided, using default search space.
+2024-12-06 18:35:44,837	INFO tune.py:616 -- [output] This uses the legacy output and progress reporter, as Jupyter notebooks are not supported by the new engine, yet. For more information, please see https://github.com/ray-project/ray/issues/36949
+2024-12-06 18:35:44,847	WARNING tune_controller.py:2132 -- The maximum number of pending trials has been automatically set to the number of available cluster CPUs, which is high (281 CPUs/pending trials). If you're running an experiment with a large number of trials, this could lead to scheduling overhead. In this case, consider setting the `TUNE_MAX_PENDING_TRIALS_PG` environment variable to the desired maximum number of concurrent pending trials.
+2024-12-06 18:35:44,849	WARNING tune_controller.py:2132 -- The maximum number of pending trials has been automatically set to the number of available cluster CPUs, which is high (281 CPUs/pending trials). If you're running an experiment with a large number of trials, this could lead to scheduling overhead. In this case, consider setting the `TUNE_MAX_PENDING_TRIALS_PG` environment variable to the desired maximum number of concurrent pending trials.
+2024-12-06 18:35:44,851	INFO wandb.py:319 -- Already logged into W&B.
+[33m(raylet)[0m bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by bash)
+[36m(_WandbLoggingActor pid=1914017)[0m wandb: Currently logged in as: mgdelacruz12 (mgdelacruz12-university-of-the-philippines-diliman). Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: Tracking run with wandb version 0.19.0
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: Run data is saved locally in /tmp/ray/session_2024-12-06_18-35-41_422579_1743218/artifacts/2024-12-06_18-35-44/_tune_2024-12-06_18-35-44/driver_artifacts/_tune_d9588_00000_0_bgr=0.1524,box=0.1266,cls=3.6625,copy_paste=0.7502,degrees=1.1206,fliplr=0.4138,flipud=0.0013,hsv_h=0.0548,hsv_2024-12-06_18-35-44/wandb/run-20241206_183548-d9588_00000
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: Syncing run _tune_d9588_00000
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: ⭐️ View project at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: 🚀 View run at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d9588_00000
+2024-12-06 18:35:49,134	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d9588_00000
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 18:35:49,914	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d9588_00001
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 18:35:50,701	ERROR tune_controller.py:1331 -- Trial task failed for trial _tune_d9588_00002
+Traceback (most recent call last):
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+             ^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 2755, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/students/mary/anaconda3/envs/AI231_ME6/lib/python3.11/site-packages/ray/_private/worker.py", line 906, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(SyntaxError): <no detail available>
+2024-12-06 18:35:51,454	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/raid/students/mary/mlops-exercises/ME6/model_dev/runs/detect/tune5/_tune_2024-12-06_18-35-44' in 0.0056s.
+[36m(_WandbLoggingActor pid=1914039)[0m wandb:
+[33m(raylet)[0m bash: /data/students/mary/anaconda3/envs/AI231_ME6/lib/libtinfo.so.6: no version information available (required by bash)[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: 🚀 View run _tune_d9588_00000 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d9588_00000
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=1914039)[0m wandb: Find logs at: ./wandb/run-20241206_183548-d9588_00000/logs
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Currently logged in as: mgdelacruz12 (mgdelacruz12-university-of-the-philippines-diliman). Use `wandb login --relogin` to force relogin[32m [repeated 2x across cluster][0m
+2024-12-06 18:35:54,088	ERROR tune.py:1037 -- Trials did not complete: [_tune_d9588_00000, _tune_d9588_00001, _tune_d9588_00002]
+2024-12-06 18:35:54,089	INFO tune.py:1041 -- Total run time: 9.25 seconds (6.60 seconds for the tuning loop).
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Tracking run with wandb version 0.19.0[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Run data is saved locally in /tmp/ray/session_2024-12-06_18-35-41_422579_1743218/artifacts/2024-12-06_18-35-44/_tune_2024-12-06_18-35-44/driver_artifacts/_tune_d9588_00001_1_bgr=0.3421,box=0.1930,cls=0.7852,copy_paste=0.0128,degrees=10.0106,fliplr=0.1348,flipud=0.4657,hsv_h=0.0394,hs_2024-12-06_18-35-44/wandb/run-20241206_183548-d9588_00001[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Run `wandb offline` to turn off syncing.[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Syncing run _tune_d9588_00001[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: ⭐️ View project at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: 🚀 View run at https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d9588_00001[32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914017)[0m wandb:                                                                                [32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: 🚀 View run _tune_d9588_00001 at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune/runs/d9588_00001
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: ⭐️ View project at: https://wandb.ai/mgdelacruz12-university-of-the-philippines-diliman/YOLOv8-tune
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=1914044)[0m wandb: Find logs at: ./wandb/run-20241206_183548-d9588_00001/logs
