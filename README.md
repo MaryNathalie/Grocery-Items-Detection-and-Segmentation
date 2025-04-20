@@ -147,7 +147,7 @@ Comparing models YOLO-M with data augmentation (blue) and YOLO11-L without addit
 
 </div> 
 
-- Improved MASK classification accuracy.
+- Improved MASK classification accuracy. 
 
 <div align="center">
   
