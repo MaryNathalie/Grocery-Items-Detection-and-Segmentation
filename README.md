@@ -136,7 +136,7 @@ Comparing models YOLO-M with data augmentation (blue) and YOLO11-L without addit
 <img src="https://github.com/MaryNathalie/Grocery-Items-Detection-and-Segmentation/blob/main/images/parameters.png" width=50% height=50%>
 </p> 
 
-- Improved classification accuracy.
+- Improved BOX classification accuracy.
 
 <div align="center">
   
@@ -147,7 +147,7 @@ Comparing models YOLO-M with data augmentation (blue) and YOLO11-L without addit
 
 </div> 
 
-- Improved classification accuracy.
+- Improved MASK classification accuracy.
 
 <div align="center">
   
